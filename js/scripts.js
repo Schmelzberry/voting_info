@@ -4,15 +4,17 @@ window.onload = function() {
         event.preventDefault();
 
 
-        let underAged = document.getElementById("unders");
+        let underAged = document.getElementById("underage");
         underAged.setAttribute("class", "hidden");
-        let superAged = document.getElementById("totsage");
+        let superAged = document.getElementById("ofage");
         superAged.setAttribute("class", "hidden");
 
         const age = parseInt(document.querySelector("input#age").value);
 
-        if (age >= 18) {
-            underAged.removeAttribute("class");
+        if (age < 17) {
+            underAged.removeAttribute("class"); 
+        } else {
+            superAged.removeAttribute("class");
         }
     };
 };
