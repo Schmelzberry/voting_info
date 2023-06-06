@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Voting n Stuff</title>
+    <link rel ="stylesheet" href="css/styles.css" type ="text/css">
+    <script src="js/scripts.js"></script>
+</head>
+
+<body>
+
+    <h1>Voting Website</h1>
+    <form>
+        <label for ="age">We need to verify that you are over the age of 18 years of age before we can help you out!</label>
+            <input id="age" type="number">
+        <button type ="submit">Submit!</button>
+    </form>
+
+
+
+    <div id="underage" class ="hidden">
+        <h1 id="unders"></h1>
+        <h1>Not old enough, rats!</h1>
+
+        <p>So here's some information for those not of age to vote yet. Below are a few places where you can learn more about civic related things:</p>
+
+        <ul>
+            <li><a href="https://www.rottentomatoes.com/tv/jury_duty/s01">Jury Duty</a>
+            <li>other stuff</li>
+            <li>more other stuff</li>
+        </ul>
+    </div>
+
+    <div id="ofage" class ="hidden">
+        <h1 id="totsage"></h1>
+    
+    <h1>Lets Register babay!!</h1>
+
+    <ul>
+        <li><a href="https://www.vote.org/am-i-registered-to-vote/?gclid=Cj0KCQjwj_ajBhCqARIsAA37s0x8lg7AAfKIrullhgHLF911Du_C_zaBgOtr2TzRlvwRwqCgVNMPa-gaAs2CEALw_wcB">Vote Registration</a>
+        <li>Places to vote</li>
+        <li>Places to vote</li>
+        <li>Places to vote</li>
+    </ul>
+    </div>
+</body>
+</html>
